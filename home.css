@@ -1,0 +1,543 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Helvatica', sans-serif;
+  background-color: #000000;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #000000;
+  border-bottom: 3px solid goldenrod;
+  position: fixed;
+  top: 0; /* Align to the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  z-index: 1000; /* Ensure it appears above other elements */
+  color: white;
+}
+
+/* Left side: Toggle Button */
+.header{
+  display: flex;
+  align-items: center;
+}
+
+.toggle-button {
+  font-size: 30px;
+  color: goldenrod;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Menu styling */
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  background-color: #000000;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.menu a {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #353535; /* Change background color on hover */
+  color: #ffcc00; /* Change text color on hover */
+  padding-left: 20px; /* Adds a sliding effect by increasing padding */
+}
+
+
+.hidden {
+  display: none;
+}
+
+/* Right side: Logo */
+
+.logo-img {
+  width: 200px; /* Adjust width as needed */
+  height: auto;
+}
+
+
+
+
+.container {
+
+  width: 90%; /* Set container width to 90% */
+  margin: 20px auto; /* Center the containers with margin */
+  padding-top: 120px;
+  border-radius: 8px;
+  background-color: #000000; /* White background for containers */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+.first-section {
+  display: flex; /* Flexbox for horizontal layout */
+}
+
+.video-section {
+  margin-top: 80px;
+  flex: 1; /* Take up 50% of the container width */
+  margin-right: 20px; /* Space between video and right section */
+}
+
+.video {
+  width: 100%; /* Make video responsive */
+  height: auto;
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+.tagline-section {
+  flex: 1; /* Take up the remaining space */
+  display: flex;
+  flex-direction: column; /* Column layout for image and description */
+}
+
+.tagline-image {
+  width: 100%; /* Make image responsive */
+  height: auto;
+  border-radius: 8px; /* Optional: rounded corners */
+  margin-bottom: 10px; /* Space between image and description */
+}
+
+.description {
+  background-color: #000000; /* Light background for description */
+  padding: 10px;
+  border-radius: 8px;
+  color: #f0f0f0;
+  text-align: justify;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: gold; /* Button color */
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for Read More button */
+.read-more:hover {
+  background-color: goldenrod; /* Darker shade on hover */
+}
+
+
+.second-section {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.prod-info {
+  
+  color: #f0f0f0;
+  width: 50%;
+  padding: 20px;
+  text-align: justify;
+}
+
+.prod-info h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.prod-info p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+.prod-img {
+  margin-top: 10px;
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.overlay-img {
+  position: absolute;
+  width:130px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.img1 {
+  top:-80px;
+  left: 350px;
+  z-index: 3;
+}
+
+.img2 {
+  top: -80px;
+  left: 220px;
+  z-index: 3;
+}
+
+.img3 {
+  top: -50px;
+  left: 290px;
+  z-index: 4;
+}
+
+.img4 {
+  top: -100px;
+  left: 150px;
+  z-index: 2;
+}
+
+.img5 {
+  top: -100px;
+  left: 420px;
+  z-index: 2;
+}
+
+.img6 {
+  top: -120px;
+  left: 480px;
+  z-index: 1;
+}
+
+.img7 {
+  top: -120px;
+  left: 100px;
+  z-index: 1;
+}
+
+/* Hover effect for images */
+.overlay-img:hover {
+  transform: scale(1.1);
+}
+
+
+
+.third-section {
+  position: relative;
+  height: 100vh;
+  width: 90%;
+  margin: 20px auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+.event-info {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.event-info h1 {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-info p {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.countdown {
+  margin-top: 20px;
+}
+
+/* Countdown Circle Styles */
+.countdown-circle {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.countdown-time {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(168, 254, 20, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: transform 0.5s ease, background-color 1s ease;
+}
+
+.countdown-time:hover {
+  background-color: rgba(255, 217, 1, 0.304);
+}
+
+.countdown-time.pulse {
+  animation: pulseEffect 1s infinite ease-in-out;
+}
+@keyframes pulseEffect {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+
+
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 20px auto;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Left Section */
+.left-section img.footer-logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.left-section p {
+  font-size: 0.9rem;
+}
+
+/* Center Section */
+.center-section {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 10px 20px;
+}
+
+.center-section p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.social-media a img {
+  width: 30px;
+  margin: 20px 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-media a:hover img {
+  transform: scale(1.2);
+}
+
+/* Right Section */
+.right-section p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.right-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.right-section ul li {
+  margin-bottom: 5px;
+}
+
+.right-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.right-section ul li a:hover {
+  color: #f0b200; /* Gold hover color */
+}
+
+
+
+
+
+
+
+
+
+
+/* Large Screen Menu Styling */
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .menu a {
+    padding: 0 15px;
+  }
+
+  .toggle-button {
+    display: none;  /* Hide toggle button on large screens */
+  }
+
+  /* Always show menu on large screens */
+  #menu {
+    display: flex !important;
+  }
+  
+
+}
+
+
+/* Small Screen Menu Styling */
+@media (max-width: 767px ) {
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .toggle-button {
+    display: block;  /* Show toggle button on small screens */
+  }
+
+  .menu.hidden {
+    display: none;
+  }
+  .Logo {
+    justify-content: center;
+  }
+
+  .first-section {
+    flex-direction: column; /* Stack elements vertically in mobile view */
+  }
+
+  .video-section {
+    margin-right: 0; /* Remove margin for mobile */
+    margin-bottom: 10px; /* Add space below the video */
+  }
+
+  .second-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .prod-info{
+    width: 100%;
+  }
+  .prod-img {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows images to wrap */
+    margin-bottom: 20px;
+  }
+
+  .overlay-img {
+    position: static; /* Remove absolute positioning */
+    margin: 0px; /* Add margin between images */
+    width: 35px; /* Reduce image width */
+    height:auto; /* Reduce image height */
+    transition: none; /* Remove hover scale effect for mobile */
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .event-info h1 {
+    font-size: 2.5rem;
+  }
+
+  .event-info p {
+    font-size: 1.3rem;
+  }
+
+  .countdown-time {
+    width: 70px;
+    height: 70px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .event-info h1 {
+    font-size: 2rem;
+  }
+
+  .event-info p {
+    font-size: 1rem;
+  }
+
+  .countdown-time {
+    width: 60px;
+    height: 60px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-media a img {
+    width: 25px;
+    margin: 5px;
+  }
+
+  .left-section p, .center-section p, .right-section p {
+    font-size: 0.8rem;
+  }
+}

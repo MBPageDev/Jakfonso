@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSCS-3E Advertising Webpage - Jakfonso Brandy</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   
+    <header class="header-top">
+        <div class="logo-center">
+            <img src="Pictures/JF_LOGO.png" alt="Logo" class="logo">
+            <hr class="underline">
+        </div>
+    </header>
+
+    <main>
+    <div class="verification-container">
+        <h2>To visit this website you must be of legal age</h2>
+        <p>Please verify your date of birth to continue</p>
+
+        
+        <input type="date" id="birthdate" class="birthdate-input">
+
+  
+        <p class="cookie-message">
+            We use cookies on this website.<br> By using this site, you agree that we may store and access cookies on your device.<br>
+            Find out more and set your preferences <a href="#">here</a>.
+        </p>
+
+
+        <label for="remember">
+            <input type="checkbox" id="remember"> Remember age and accept cookies policy.
+        </label>
+
+
+        <button id="enterButton" onclick="verifyAge()">Enter</button>
+
+
+        <p id="error-message" class="error-message"></p>
+    </div>
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>
