@@ -4,13 +4,12 @@
   box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
   font-family: 'Helvatica', sans-serif;
   background-color: #000000;
 }
 
-/* Header Styling */
+
 header {
   display: flex;
   margin: 0 auto;
@@ -23,14 +22,14 @@ header {
   background-color: #000000;
   border-bottom: 3px solid goldenrod;
   position: fixed;
-  top: 0; /* Align to the top */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for centering */
-  z-index: 1000; /* Ensure it appears above other elements */
+  top: 0;
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: 1000; 
   color: white;
 }
 
-/* Left side: Toggle Button */
+
 .header{
   display: flex;
   align-items: center;
@@ -44,7 +43,7 @@ header {
   cursor: pointer;
 }
 
-/* Menu styling */
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -66,9 +65,9 @@ header {
 }
 
 .menu a:hover {
-  background-color: #353535; /* Change background color on hover */
-  color: #ffcc00; /* Change text color on hover */
-  padding-left: 20px; /* Adds a sliding effect by increasing padding */
+  background-color: #353535; 
+  color: #ffcc00; 
+  padding-left: 20px; 
 }
 
 
@@ -76,10 +75,10 @@ header {
   display: none;
 }
 
-/* Right side: Logo */
+
 
 .logo-img {
-  width: 200px; /* Adjust width as needed */
+  width: 200px; 
   height: auto;
 }
 
@@ -88,46 +87,45 @@ header {
 
 .container {
 
-  width: 90%; /* Set container width to 90% */
-  margin: 20px auto; /* Center the containers with margin */
+  width: 90%; 
+  margin: 20px auto; 
   padding-top: 120px;
   border-radius: 8px;
-  background-color: #000000; /* White background for containers */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  background-color: #000000; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .first-section {
-  display: flex; /* Flexbox for horizontal layout */
+  display: flex; 
 }
 
 .video-section {
   margin-top: 80px;
-  flex: 1; /* Take up 50% of the container width */
-  margin-right: 20px; /* Space between video and right section */
+  flex: 1; 
+  margin-right: 20px; 
 }
 
 .video {
-  width: 100%; /* Make video responsive */
+  width: 100%; 
   height: auto;
-  border-radius: 8px; /* Optional: rounded corners */
+  border-radius: 8px; 
 }
 
 .tagline-section {
-  flex: 1; /* Take up the remaining space */
+  flex: 1;
   display: flex;
-  flex-direction: column; /* Column layout for image and description */
+  flex-direction: column; 
 }
 
 .tagline-image {
-  width: 100%; /* Make image responsive */
+  width: 100%; 
   height: auto;
-  border-radius: 8px; /* Optional: rounded corners */
-  margin-bottom: 10px; /* Space between image and description */
+  border-radius: 8px; 
+  margin-bottom: 10px; 
 }
 
 .description {
-  background-color: #000000; /* Light background for description */
-  padding: 10px;
+  background-color: #000000; 
   border-radius: 8px;
   color: #f0f0f0;
   text-align: justify;
@@ -137,16 +135,16 @@ header {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 15px;
-  background-color: gold; /* Button color */
+  background-color: gold;
   color: rgb(255, 255, 255);
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
 
-/* Hover effect for Read More button */
+
 .read-more:hover {
-  background-color: goldenrod; /* Darker shade on hover */
+  background-color: goldenrod; 
 }
 
 
@@ -232,7 +230,7 @@ header {
   z-index: 1;
 }
 
-/* Hover effect for images */
+
 .overlay-img:hover {
   transform: scale(1.1);
 }
@@ -266,7 +264,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.6); 
 }
 
 .event-info {
@@ -276,7 +274,9 @@ header {
 }
 
 .event-info h1 {
+  font-family: 'Monoton', cursive;
   font-size: 5rem;
+  color: white;
   margin-bottom: 0.5rem;
 }
 
@@ -289,7 +289,7 @@ header {
   margin-top: 20px;
 }
 
-/* Countdown Circle Styles */
+
 .countdown-circle {
   display: flex;
   justify-content: center;
@@ -325,6 +325,72 @@ header {
   }
 }
 
+/*------------------------------------------------------------------------------------------------------- About Us*/
+
+.profile-container {
+ margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #000000;
+}
+
+.profile {
+  flex-basis: 22%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile h3, .profile p {
+  color: #f0f0f0;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.developer-description {
+  background-color: #000000;
+  font-size: 1.2em;
+  color: hsl(0, 0%, 98%);
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -347,7 +413,7 @@ header {
   padding: 10px;
 }
 
-/* Left Section */
+
 .left-section img.footer-logo {
   width: 150px;
   margin-bottom: 10px;
@@ -357,7 +423,7 @@ header {
   font-size: 0.9rem;
 }
 
-/* Center Section */
+
 .center-section {
   border-left: 1px solid white;
   border-right: 1px solid white;
@@ -379,7 +445,7 @@ header {
   transform: scale(1.2);
 }
 
-/* Right Section */
+
 .right-section p {
   font-weight: bold;
   margin-bottom: 10px;
@@ -401,7 +467,7 @@ header {
 }
 
 .right-section ul li a:hover {
-  color: #f0b200; /* Gold hover color */
+  color: #f0b200; 
 }
 
 
@@ -413,7 +479,6 @@ header {
 
 
 
-/* Large Screen Menu Styling */
 @media (min-width: 768px) {
   .menu {
     display: flex;
@@ -428,10 +493,10 @@ header {
   }
 
   .toggle-button {
-    display: none;  /* Hide toggle button on large screens */
+    display: none;  
   }
 
-  /* Always show menu on large screens */
+ 
   #menu {
     display: flex !important;
   }
@@ -440,7 +505,7 @@ header {
 }
 
 
-/* Small Screen Menu Styling */
+
 @media (max-width: 767px ) {
   .menu {
     flex-direction: column;
@@ -453,7 +518,7 @@ header {
   }
 
   .toggle-button {
-    display: block;  /* Show toggle button on small screens */
+    display: block;  
   }
 
   .menu.hidden {
@@ -464,12 +529,12 @@ header {
   }
 
   .first-section {
-    flex-direction: column; /* Stack elements vertically in mobile view */
+    flex-direction: column; 
   }
 
   .video-section {
-    margin-right: 0; /* Remove margin for mobile */
-    margin-bottom: 10px; /* Add space below the video */
+    margin-right: 0; 
+    margin-bottom: 10px; 
   }
 
   .second-section {
@@ -485,16 +550,21 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allows images to wrap */
+    flex-wrap: wrap; 
     margin-bottom: 20px;
   }
 
   .overlay-img {
-    position: static; /* Remove absolute positioning */
-    margin: 0px; /* Add margin between images */
-    width: 35px; /* Reduce image width */
-    height:auto; /* Reduce image height */
-    transition: none; /* Remove hover scale effect for mobile */
+    position: static; 
+    margin: 0px;
+    width: 35px; 
+    height:auto; 
+    transition: none; 
+  }
+
+  .profile {
+    flex-basis: 100%;
+    margin-bottom: 20px;
   }
 
 }
